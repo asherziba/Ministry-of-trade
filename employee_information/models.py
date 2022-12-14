@@ -40,7 +40,8 @@ class Employees(models.Model):
     salary = models.FloatField(default=0) 
     status = models.IntegerField() 
     date_added = models.DateTimeField(default=timezone.now) 
-    date_updated = models.DateTimeField(auto_now=True) 
+    date_updated = models.DateTimeField(auto_now=True)
+    #photo = models.ImageField(blank=True, upload_to="employees/photos/")
 
     def __str__(self):
         return self.firstname + ' ' +self.middlename + ' '+self.lastname + ' '

@@ -5,21 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 import json
-employees = [
 
-    {
-        'code':1,
-        'name':"John D Smith",
-        'contact':'09123456789',
-        'address':'Sample Address only'
-    },{
-        'code':2,
-        'name':"Claire C Blake",
-        'contact':'09456123789',
-        'address':'Sample Address2 only'
-    }
-
-]
 # Login
 def login_user(request):
     logout(request)
