@@ -32,8 +32,8 @@
                 <dd class="ps-3 fw-bolder">{{ employee.position_id }}</dd>
                 <dt class="mdc-typography mdc-theme--primary">Date Hired</dt>
                 <dd class="ps-3 fw-bolder">{{ employee.date_hired|date:'M d, Y' }}</dd>
-                <dt class="mdc-typography mdc-theme--primary">Salary</dt>
-                <dd class="ps-3 fw-bolder">{{ employee.salary|intcomma }}</dd>
+                <!--<dt class="mdc-typography mdc-theme--primary">Salary</dt>
+                <dd class="ps-3 fw-bolder">{{ employee.salary|intcomma }}</dd>-->
                 <dt class="mdc-typography mdc-theme--primary">Status</dt>
                 <dd class="ps-3 fw-bolder">
                     {% if employee.status == 1 %}
