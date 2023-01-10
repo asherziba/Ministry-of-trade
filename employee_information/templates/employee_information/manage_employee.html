@@ -2,6 +2,10 @@
     <form action="" id="employee-form">
         <input type="hidden" name="id" value="{% if employee.pk %}{{employee.pk}}{% endif %}">
         <div class="row">
+            <div class="form-group mb-3">
+                    <label for="code" class="control-label">Photo</label>
+                    <input type="file" name="img" id="img" class="form-control form-control-sm rounded-0" value="{% if employee.img %}{{employee.img}}{% endif %}" required>
+                </div>
             <div class="col-md-6">
                 <div class="form-group mb-3">
                     <label for="code" class="control-label">Employee ID/Code</label>
